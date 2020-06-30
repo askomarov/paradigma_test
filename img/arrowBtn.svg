@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="34.062" height="34.062" viewBox="0 0 34.062 34.062">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#gradient-overlay-1);
+      }
+
+      .cls-2 {
+        stroke: #b3b3b3;
+        stroke-width: 3px;
+        filter: url(#gradient-overlay-2);
+        fill: none;
+      }
+    </style>
+
+    <filter id="gradient-overlay-1" filterUnits="userSpaceOnUse">
+      <feImage x="1.5" y="1.5" width="31.061999999999898" height="31.062000000000012" preserveAspectRatio="none" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzEuMDYxOTk5OTk5OTk5ODk4IiBoZWlnaHQ9IjMxLjA2MjAwMDAwMDAwMDAxMiI+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjE1LjUzMSIgeTE9IjMxLjA2MiIgeDI9IjE1LjUzMSI+CiAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZWU4NThjIi8+CiAgPHN0b3Agb2Zmc2V0PSIwLjk4IiBzdG9wLWNvbG9yPSIjZmFiY2JjIi8+CiAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmFiY2JjIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiLz48L3N2Zz4="/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend in2="SourceGraphic" result="gradientFill"/>
+    </filter>
+    <filter id="gradient-overlay-2" filterUnits="userSpaceOnUse">
+      <feImage x="1.5" y="1.5" width="31.061999999999898" height="31.062000000000012" preserveAspectRatio="none" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzEuMDYxOTk5OTk5OTk5ODk4IiBoZWlnaHQ9IjMxLjA2MjAwMDAwMDAwMDAxMiI+PGxpbmVhckdyYWRpZW50Lz4KPHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIvPjwvc3ZnPg=="/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend in2="SourceGraphic" result="gradientFill"/>
+    </filter>
+  </defs>
+  <g>
+    <g class="cls-1">
+      <g style="fill: none; filter: url(#gradient-overlay-2)">
+        <circle cx="17.031" cy="17.031" r="15.531" id="circle-1" style="stroke: inherit; filter: none; fill: inherit" class="cls-2"/>
+      </g>
+      <use xlink:href="#circle-1" style="stroke: #b3b3b3; filter: none; fill: none"/>
+    </g>
+    <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAHCAMAAADpsEdvAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAeFBMVEUAAAAtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0AAADvA8gAAAAAJ3RSTlMApFRZqpD5P0X6igGn8S4z86EGu+YgJOq3BQ3N2SzdyQoW3P0VI84JhjlMAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAEVJREFUCNdjYGRigABmFgZWNnYwk4OTi4Gbh5cPyOQXEORmYBASFhFlEBOXkATJSknLyMrJK0B0KSopy6hATWBQVRMFUQBnTgMiTfjg9wAAAABJRU5ErkJggg==" x="12.031" y="14.937" width="11" height="7"/>
+  </g>
+</svg>

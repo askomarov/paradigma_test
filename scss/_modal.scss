@@ -1,0 +1,207 @@
+.modal-dialog {
+   width: 78vw;
+   height: 667px;
+   max-width: 736px;
+   margin: 0 auto;
+}
+.modal-content {
+   border: 1px solid rgb(251, 238, 239);
+   border-radius: 50px;
+   background-color: rgb(255, 255, 255);
+}
+
+.modal {
+   &__body {
+      text-align: center;
+      padding: 75px/1920px * 100vw;
+      &::after {
+         content: "";
+         display: inline-block;
+         width: 263px/1920px * 100vw;
+         height: 386px/1920px * 100vw;
+         min-width: 150px;
+         min-height: 150px;
+         position: absolute;
+         bottom: 98px;
+         left: -108px;
+         background: url("../img/popupImg.svg") no-repeat;
+         z-index: 0;
+         background-size: contain;
+         @media (max-width: 1020px) {
+            left: 0;
+            bottom: 50px;
+         }
+      }
+   }
+
+   &__title {
+      font-size: 36px;
+      color: rgb(40, 40, 40);
+      line-height: 1.2;
+      text-align: center;
+      margin-bottom: 23px;
+      @media (max-width: 992px) {
+         font-size: 24px;
+      }
+   }
+
+   &__text {
+      font-size: 16px;
+      letter-spacing: 0.4px;
+      max-width: 530px;
+      margin: 0 auto 37px;
+   }
+
+   &__form {
+      position: relative;
+      z-index: 2;
+      .form-btn {
+         height: 80px;
+         width: 500px;
+         color: #fff;
+         font-size: 18px;
+         font-family: "MuseoSansCyrl700";
+         text-align: left;
+         p {
+            position: relative;
+            display: inline-block;
+            z-index: 10;
+            margin: 0;
+            left: 74px;
+            text-transform: uppercase;
+            letter-spacing: 2.16px;
+            &::after {
+               content: "";
+               display: inline-block;
+               width: 199px;
+               height: 52px;
+               position: absolute;
+               top: -15px;
+               left: 288px;
+               background: url("../img/popupPlant.svg") no-repeat;
+               z-index: 0;
+            }
+         }
+         &::after,
+         &::before {
+            width: 500px;
+         }
+         @media (max-width: 1020px) {
+            width: 500px/1920px * 100vw;
+            height: 50px;
+            min-width: 200px;
+            font-size: 12px;
+            text-align: center;
+            &::after,
+            &::before {
+               width: 500px/1920px * 100vw;
+               height: 50px;
+               min-width: 200px;
+            }
+            p {
+               left: 0;
+               &::after {
+                  display: none;
+               }
+            }
+         }
+      }
+   }
+   input {
+      height: 80px;
+      width: 500px;
+      border-radius: 40px;
+      border: solid 1px #fbeeef;
+      background-color: #ffffff;
+      padding-left: 46px;
+      @media (max-width: 1020px) {
+         width: 500px/1920px * 100vw;
+         height: 50px;
+         min-width: 200px;
+         padding-left: 20px;
+      }
+   }
+   .close {
+      position: absolute;
+      top: 48px;
+      right: 41px;
+   }
+}
+
+.select-body {
+   height: 80px;
+   width: 500px;
+   border-radius: 40px;
+   border: solid 1px #fbeeef;
+   background-color: #ffffff;
+   position: relative;
+   overflow: hidden;
+   margin: 0 auto;
+   margin-bottom: 16px;
+   @media (max-width: 1020px) {
+      width: 500px/1920px * 100vw;
+      height: 50px;
+      min-width: 200px;
+   }
+   select {
+      position: absolute;
+      top: 0;
+      padding: 0;
+      padding-left: 44px;
+      width: 105%;
+      height: 100%;
+      border: none;
+      outline: none;
+      &:focus,
+      &:active {
+         outline: none;
+         border: none;
+      }
+      color: #282828;
+      @media (max-width: 1020px) {
+         padding-left: 20px;
+         width: 110%;
+         font-size: 12px;
+      }
+   }
+   .label-select {
+      position: absolute;
+      z-index: 20;
+      top: 35px;
+      right: 34px;
+      width: 18px;
+      height: 10px;
+      background: url("../img/popupArrowDown4.svg") center no-repeat;
+      @media (max-width: 1020px) {
+         display: none;
+      }
+   }
+}
+
+.popup-map {
+   opacity: 0;
+   visibility: hidden;
+   position: absolute;
+   top: 0;
+   left: 0px;
+   z-index: 150;
+   transition: all 1s ease 0s;
+   iframe {
+      width: 78px;
+      height: 78px;
+      border-radius: 50%;
+      transition: all 1s ease 0s;
+   }
+
+   &.showme {
+      opacity: 1;
+      visibility: visible;
+      top: 110px;
+      left: 0;
+      iframe {
+         width: 320px;
+         height: 200px;
+         border-radius: 0;
+      }
+   }
+}
