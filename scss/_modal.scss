@@ -14,6 +14,8 @@
    &__body {
       text-align: center;
       padding: 75px/1920px * 100vw;
+      position: relative;
+      z-index: 150;
       &::after {
          content: "";
          display: inline-block;
@@ -25,7 +27,7 @@
          bottom: 98px;
          left: -108px;
          background: url("../img/popupImg.svg") no-repeat;
-         z-index: 0;
+         z-index: 1;
          background-size: contain;
          @media (max-width: 1020px) {
             left: 0;
@@ -79,7 +81,7 @@
                top: -15px;
                left: 288px;
                background: url("../img/popupPlant.svg") no-repeat;
-               z-index: 0;
+               z-index: 5;
             }
          }
          &::after,
@@ -120,9 +122,14 @@
          min-width: 200px;
          padding-left: 20px;
       }
+      &:active,&:focus{ 
+         outline:none;
+         border:none;
+      }
    }
    .close {
       position: absolute;
+      z-index: 9999;
       top: 48px;
       right: 41px;
    }

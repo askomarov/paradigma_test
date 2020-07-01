@@ -61,6 +61,8 @@
 .modal__body {
   text-align: center;
   padding: 3.90625vw;
+  position: relative;
+  z-index: 150;
 }
 
 .modal__body::after {
@@ -74,7 +76,7 @@
   bottom: 98px;
   left: -108px;
   background: url("../img/popupImg.svg") no-repeat;
-  z-index: 0;
+  z-index: 1;
   background-size: contain;
 }
 
@@ -139,7 +141,7 @@
   top: -15px;
   left: 288px;
   background: url("../img/popupPlant.svg") no-repeat;
-  z-index: 0;
+  z-index: 5;
 }
 
 .modal__form .form-btn::after, .modal__form .form-btn::before {
@@ -185,8 +187,14 @@
   }
 }
 
+.modal input:active, .modal input:focus {
+  outline: none;
+  border: none;
+}
+
 .modal .close {
   position: absolute;
+  z-index: 9999;
   top: 48px;
   right: 41px;
 }
